@@ -1,0 +1,108 @@
+html,
+body {
+  margin   : 0;
+  padding  : 0;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+
+.configurable-application--loading {
+  text-align : center;
+  display    : block;
+  height     : 100%;
+  width      : 100%;
+  overflow   : hidden;
+  background : #fff url(../assets/loader-ie9.gif) no-repeat center center;
+}
+
+.configurable-application__view-container {
+  padding            : 0;
+  margin             : 0;
+  width              : 100%;
+  height             : 100%;
+  display            : -webkit-box;
+  display            : -ms-flexbox;
+  display            : flex;
+  -webkit-box-pack   : center;
+  -ms-flex-pack      : center;
+  justify-content    : center;
+  -webkit-box-align  : center;
+  -ms-flex-align     : center;
+  align-items        : center;
+  -ms-flex-line-pack : center;
+  align-content      : center
+}
+
+.configurable-application__view-container .esri-view,
+.configurable-application__view-container .esri-view-root {
+  width  : 100%;
+  height : 100%;
+}
+
+#options-panel {
+  background : rgba(255, 255, 255, 0.2);
+  transition : background 0.5s linear;
+}
+
+#options-panel:hover {
+  background : rgba(255, 255, 255, 0.4);
+  transition : background 1s linear;
+}
+
+#profile-chart-panel {
+  background : transparent;
+  width      : calc(100vw - 30px);
+  height     : 225px;
+  opacity    : 1;
+  transition : opacity 0.5s 0.5s ease-in-out, padding 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+#profile-chart-panel.collapsed {
+  height     : 0;
+  opacity    : 0;
+  transition : opacity 0.5s ease-in-out, padding 0.5s 0.5s ease-in-out, height 0.5s 0.5s ease-in-out;
+}
+
+#profile-chart-node {
+  width  : 100%;
+  height : 100%;
+}
+
+.esri-widget--button {
+  color      : #fff !important;
+  background : #004575 !important;
+}
+
+.view-spin-node {
+  padding       : 0;
+  z-index       : 99;
+  position      : absolute;
+  top           : 15px;
+  left          : calc(50% - 45px);
+  background : #004575 !important;
+  border-radius : 9px;
+}
+
+.view-spin-node * {
+  outline : none;
+}
+
+.spin-btn {
+  margin     : 0 5px;
+  color      : #ccc !important;
+  background : #004575 !important;
+}
+
+.spin-btn:hover,
+.selected {
+  color       : #fff !important;
+  text-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#always-up-btn {
+  vertical-align : text-top;
+  line-height    : 1.1em;
+  margin         : 0 2px;
+}
+
