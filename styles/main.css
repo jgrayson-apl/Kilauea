@@ -65,6 +65,7 @@ body {
 }
 
 #profile-chart-node {
+  cursor : pointer;
   width  : 100%;
   height : 100%;
 }
@@ -80,7 +81,7 @@ body {
   position      : absolute;
   top           : 15px;
   left          : calc(50% - 45px);
-  background : #004575 !important;
+  background    : #004575 !important;
   border-radius : 9px;
 }
 
@@ -105,4 +106,31 @@ body {
   line-height    : 1.1em;
   margin         : 0 2px;
 }
+
+.slider-table td {
+  padding : 0;
+  /*border  : solid 1px red;*/
+}
+
+.directions-node {
+  margin : 0 5px 0 5px;
+}
+
+.direction-node {
+  width          : 20px;
+  vertical-align : middle;
+}
+
+.direction-node:hover {
+  color : #69dcff;
+}
+
+.direction-node:active {
+  color : #fff;
+}
+
+.direction-label {
+  color : #69dcff;
+}
+
 
